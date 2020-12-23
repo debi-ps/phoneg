@@ -1,0 +1,12 @@
+{
+	"availableCodes": ["ua"],
+	"availableTypes": ["fixed", "mobile"],
+	"numbers": {
+		"min": 0,
+		"max": 9999999
+	},
+	"phoneTypes": {
+		"available": ["p", "dp", "fp", "fsp", "fsap", "fdsp", "fdsap"],
+		"default": ["p"]
+	}
+}

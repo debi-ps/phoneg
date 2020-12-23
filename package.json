@@ -1,0 +1,22 @@
+{
+	"name": "phoneg",
+	"version": "v0.1.0",
+	"description": "Application for phone bruteforce wordlist setup.",
+	"main": "app.js",
+	"scripts": {},
+	"keywords": [
+		"bruteforce",
+		"password",
+		"generator",
+		"phone"
+	],
+	"author": "Debigs",
+	"license": "MIT",
+	"bin": {
+		"phoneg": "app.js"
+	},
+	"dependencies": {
+		"config": "^3.3.3",
+		"yargs": "13.2"
+	}
+}
