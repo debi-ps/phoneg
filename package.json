@@ -14,7 +14,8 @@
 		"bruteforce",
 		"password",
 		"generator",
-		"phone"
+		"phone",
+		"cli"
 	],
 	"author": "Debi",
 	"license": "MIT",
