@@ -1,6 +1,6 @@
 {
 	"name": "phoneg",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "This is a CLI application for generating wordlist of phone numbers for bruteforce attacks. It provides generating list with custom configuration and generating with predefined set of configuration by country.",
 	"main": "app.js",
 	"scripts": {
