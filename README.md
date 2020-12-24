@@ -17,8 +17,7 @@ Note: requirements are based on PC configuration that was used during package de
 
 ## Installation
 ```
-$ git clone https://github.com/debi-ps/phoneg.git /path/to/store
-$ npm i -g /path/to/store
+$ npm i -g phoneg
 $ phoneg --help
 ```
 
