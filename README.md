@@ -1,6 +1,6 @@
 # debi-ps/phoneg
 
-During network pain test I met the case of setting phone number as an access point's root pre-shared password. It's not safe at all, however, I did not find suitable wordlist on the internet. No wonder, because APs are based in different countries with different region and country codes. Also phones could be written in many styles.
+During network pen test I met the case of setting phone number as an access point's root pre-shared password. It's not safe at all, however, I did not find suitable wordlist on the internet. No wonder, because APs are based in different countries with different region and country codes. Also phones could be written in many styles.
 
 In many cases we do not need the large set of all possible phone numbers: all countries, all region codes, all telephone providers, etc. We want suitable set for our current situation. This is what this application was designed for. Hope it will be usefull.
 
