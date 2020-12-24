@@ -12,7 +12,14 @@ const selectedTypes = typesValidate(options.types);
 
 const STORE_FILE = options.file;
 
-const phoneConstructor = new PhoneConstructor(options.country);
+const phoneConstructor = new PhoneConstructor();
+
+if (options.country) {
+	phoneConstructor.setCountry(options.country);
+} else if (options.codes) {
+	phoneConstructor.phone.countryCode = options.codes[0];
+	phoneConstructor.phone.codes = options.codes.slice(1);
+}
 
 for (number of generator(
 	options.min || config.get('numbers.min'),

@@ -1,7 +1,7 @@
 {
 	"name": "phoneg",
 	"version": "v0.1.0",
-	"description": "Application for phone bruteforce wordlist setup.",
+	"description": "This is a CLI application for generating wordlist of phone numbers for bruteforce attacks. It provides generating list with custom configuration and generating with predefined set of configuration by country.",
 	"main": "app.js",
 	"scripts": {},
 	"keywords": [
@@ -10,7 +10,7 @@
 		"generator",
 		"phone"
 	],
-	"author": "Debigs",
+	"author": "Debi",
 	"license": "MIT",
 	"bin": {
 		"phoneg": "app.js"

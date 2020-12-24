@@ -1,17 +1,28 @@
 const fs = require('fs');
 
+const DEFAULT_ADDITION = '+';
+
 class PhoneConstructor {
 	constructor(countryCode) {
-		this.country = countryCode;
-
-		const countryData = JSON.parse(
-			fs.readFileSync('config/codes/' + countryCode + '.json')
-		);
-
 		this.phone = {};
-		this.phone.countryCode = countryData.countryCode;
-		this.phone.addition = countryData.codeAddition;
-		this.phone.codes = countryData.codes;
+		this.phone.addition = DEFAULT_ADDITION;
+		this.country = countryCode || null;
+
+		this.setCountry(countryCode);
+	}
+
+	setCountry(countryCode) {
+		this.country = countryCode || null;
+
+		if (countryCode) {
+			const countryData = JSON.parse(
+				fs.readFileSync('config/codes/' + countryCode + '.json')
+			);
+
+			this.phone.countryCode = countryData.countryCode;
+			this.phone.addition = countryData.codeAddition;
+			this.phone.codes = countryData.codes;
+		}
 	}
 
 	fullPhone(phone) {
@@ -73,7 +84,7 @@ class PhoneConstructor {
 			phone.slice(10, 12),
 		];
 
-		return phone.slice(0, 2) + ' ' + phoneParts.join('-');
+		return phone.slice(0, 2) + phoneParts.join('-');
 	}
 
 	fullDefSepAdditionPhone(phone) {
@@ -86,7 +97,7 @@ class PhoneConstructor {
 			phone.slice(10, 12),
 		];
 
-		return this.phone.addition + phone.slice(0, 2) + ' ' + phoneParts.join('-');
+		return this.phone.addition + phone.slice(0, 2) + phoneParts.join('-');
 	}
 
 	phonesGen = function* (content) {

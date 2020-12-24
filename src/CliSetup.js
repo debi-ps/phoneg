@@ -39,6 +39,11 @@ module.exports.setup = function () {
 			describe:
 				'Define set of phone types that you want to include to the wordlist. Available list you can find in the documentation. [`p`] is default value',
 			type: 'array',
+		})
+		.option('a', {
+			alias: 'addition',
+			describe: "Define addition to the country code. For example '+'.",
+			type: 'string',
 		}).argv;
 };
 
